@@ -20,6 +20,8 @@
         <input type="tel" name="phone" id="phone" /> <br />
         <label>Password :</label> <br />
         <input type="password" name="password" id="password" /> <br />
+        <label>Gender :</label> <br />
+        <input type="text" name="gender" id="gender" /> <br />
         <label>Student Name :</label> <br />
         <input type="text" name="studentname" id="studentname" placeholder="Enter Student Name"> <br />
         <h3>What is 1+1?</h3>
@@ -39,18 +41,59 @@
         <button>Submit</button> <br />
         <input type="search" /> <br />
         <input type="submit" /> <br />
-        <label>What do you live in?</label> <br />
-        <select name="home" id="home">
-            <option value="house">House</option>
-            <option value="apartment">Apartment</option>
-            <option value="mansion">Mansion</option>
-            <option value="penthouse">Penthouse</option>
-            <option value="cabin">Cabin</option>
-            <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <label>Math</label> <br />
+        <select name="math" id="math">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select> <br />
+        <label>Science</label> <br />
+        <select name="science" id="science">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select> <br />
+        <label>English</label> <br />
+        <select name="english" id="english">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select> <br />
+            <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)+parseInt(c.value)">
                 <input type="number" id="a" name="a">+
-                <input type="number" id="b" name="b" value="50">=
-                <output name="x" for="a b"></output> <br> <br>
+                <input type="number" id="b" name="b">+
+                <input type="number" id="c" name="c">=
+                <output name="x" for="a b c"></output> <br> <br>
             </form>
+            <fieldset>
+                <legend>
+                    <h3>Personal Details</h3>
+                </legend>
+                <label>Name</label><br>
+                <input type="text" id="name"><br>
+                <label>Email</label><br>
+                <input type="text" id="email"><br>
+                <label>Gender</label><br>
+                <input type="text" id="gender"><br>
+                <label>Date of Birth</label><br>
+                <input type="text" id="dateofbirth"><br>
+                <button>Submit</button>
+            </fieldset>
     </form>
 </body>
 
